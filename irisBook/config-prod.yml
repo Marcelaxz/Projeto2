@@ -1,7 +1,7 @@
 logging:
   level: INFO
   loggers:
-    com.trainingcenter: DEBUG
+    br.mack: DEBUG
 
 database:
   driverClass: com.mysql.cj.jdbc.Driver

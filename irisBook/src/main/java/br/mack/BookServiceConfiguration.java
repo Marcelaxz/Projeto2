@@ -1,10 +1,10 @@
 package br.mack;
-import io.dropwizard.Configuration;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import io.dropwizard.db.DataSourceFactory;
+        import io.dropwizard.Configuration;
+        import com.fasterxml.jackson.annotation.JsonProperty;
+        import io.dropwizard.db.DataSourceFactory;
 
-import javax.validation.Valid;
-import javax.validation.constraints.*;
+        import javax.validation.Valid;
+        import javax.validation.constraints.*;
 
 public class BookServiceConfiguration extends Configuration{
     @Valid

@@ -1,7 +1,7 @@
 package br.mack.resources;
 
 import br.mack.api.Book;
-import br.mack.api.Book.db.BookDao;
+import br.mack.db.BookDao;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

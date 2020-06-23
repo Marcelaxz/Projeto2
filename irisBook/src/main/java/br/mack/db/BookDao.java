@@ -9,7 +9,7 @@ import org.jdbi.v3.sqlobject.statement.SqlQuery;
 import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 
 import java.util.List;
-@RegisterRowMapper(ProductMapper.class)
+@RegisterRowMapper(BookMapper.class)
 
 public interface BookDao {
         @SqlUpdate("insert into book (qtd, week) values (:qtd, :week)")

@@ -7,14 +7,14 @@ import io.dropwizard.Configuration;
 import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-
+import io.dropwizard.Application;
 import org.eclipse.jetty.servlets.CrossOriginFilter;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.FilterRegistration;
 import java.util.EnumSet;
 
-public class App {
+public class App extends Application<Configuration> {
     public static void main( String[] args ) {
         try{
             (new App()).run(args);
@@ -28,7 +28,7 @@ public class App {
         bootstrap.addBundle(assetsBundle);
     }
 
-    public void run(Configuration configuration, Environment environment){
+    public void run(Configuration configuration, Environment environment) throws Exception{
 
         //CORS headers
         final FilterRegistration.Dynamic cors = environment.servlets().addFilter("CORS", CrossOriginFilter.class);

@@ -4,21 +4,19 @@ import java.io.Serializable;
 
 public class Result implements Serializable {
     String date;
-    Double value;
+    Long value;
 
     public String getDate() {
         return date;
     }
 
-    public void setDate(String date) {
-        this.date = date;
-    }
+    public void setDate(String date) { this.date = date; }
 
-    public Double getValue() {
+    public Long getValue() {
         return value;
     }
 
-    public void setValue(Double value) {
+    public void setValue(Long value) {
         this.value = value;
     }
 }

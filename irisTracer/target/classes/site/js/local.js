@@ -12,7 +12,7 @@ var svg = d3.select("#my_dataviz")
      "translate(" + margin.left + "," + margin.top + ")");
 
 
-d3.json("/api/Tracer",
+d3.json("api/Tracer/datas",
 
     function(data){
 
@@ -21,19 +21,19 @@ d3.json("/api/Tracer",
         var parseDate = d3.timeParse("%Y-%m-%d");
 
         data = data.results.map(function(d) {
-            d.date = parseDate(d.date);
+            d.diaCorrido = parseDate(d.diaCorrido);
             return d;
         });
 
 
         data = data.filter(
             function(d) {
-                return d.value != null;
+                return d.percurso != null;
             }
         );
 
         var x = d3.scaleTime()
-            .domain(d3.extent(data, function(d) { return d.date; }))
+            .domain(d3.extent(data, function(d) { return d.diaCorrido; }))
             .range([ 0, width ]);
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
@@ -41,7 +41,7 @@ d3.json("/api/Tracer",
 
 
         var y = d3.scaleLinear()
-            .domain( d3.extent(data, function(d) { return d.value; }))
+            .domain( d3.extent(data, function(d) { return d.percurso; }))
             .range([ height, 0 ]);
         svg.append("g")
             .call(d3.axisLeft(y));
@@ -53,8 +53,8 @@ d3.json("/api/Tracer",
             .attr("stroke", "#0B3D91")
             .attr("stroke-width", 2)
             .attr("d", d3.line()
-                .x(function(d) { return x(d.date) })
-                .y(function(d) { return y(d.value) })
+                .x(function(d) { return x(d.diaCorrido) })
+                .y(function(d) { return y(d.percurso) })
             )
 
         svg
@@ -63,8 +63,8 @@ d3.json("/api/Tracer",
           .data(data)
           .enter()
           .append("circle")
-          .attr("cx", function(d) { return x(d.date) } )
-          .attr("cy", function(d) { return y(d.value) } )
+          .attr("cx", function(d) { return x(d.diaCorrido) } )
+          .attr("cy", function(d) { return y(d.Percurso) } )
           .attr("r", 2.5)
           .attr("fill", "#FC3D21")
     })

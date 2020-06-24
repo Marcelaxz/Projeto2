@@ -1,5 +1,6 @@
 package br.mack.resources;
 
+import br.mack.api.Result;
 import br.mack.api.Tracer;
 import br.mack.persistencia.TracerDAOMySQL;
 
@@ -29,6 +30,11 @@ public class TracerResource {
     @GET
     public List<Tracer> getTracer() {
         return this.dao.read();
+    }
+
+    @GET
+    @Path("/datas")
+    public  List<Result> getDados(){ return  this.dao.result();
     }
 
     @DELETE

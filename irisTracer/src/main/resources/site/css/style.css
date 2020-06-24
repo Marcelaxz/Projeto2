@@ -63,7 +63,7 @@ a.link1:link{
 	 color:aqua;
 }
 a.link1:active{
-	color:blueviolet;
+	color:#FF8000;
 }
 a.link1:hover{
 	transition-delay: .1s;

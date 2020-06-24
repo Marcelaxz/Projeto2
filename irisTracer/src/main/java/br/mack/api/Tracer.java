@@ -1,5 +1,7 @@
 package br.mack.api;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -7,6 +9,8 @@ public class Tracer implements Serializable {
     private long id;
     private String nome;
     private double percurso;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
+
     private Date diaCorrido;
 
     public Tracer(){}

@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="293ffa37-bd99-4260-88a5-be229c1d4e2b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/mack/entidade/Tracer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/mack/api/Tracer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/mack/persistencia/MySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/mack/persistencia/MySQLConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/mack/persistencia/TracerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/mack/persistencia/TracerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/mack/persistencia/TracerDAOMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/mack/persistencia/TracerDAOMySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/mack/resources/TracerResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/mack/resources/TracerResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/site/js/local.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/js/local.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/mack/entidade/Tracer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/mack/persistencia/MySQLConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/mack/persistencia/MySQLConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/mack/persistencia/TracerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/mack/persistencia/TracerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/mack/persistencia/TracerDAOMySQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/mack/persistencia/TracerDAOMySQL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/mack/resources/TracerResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/mack/resources/TracerResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/site/js/local.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/js/local.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,44 +84,37 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593007046569">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593008292112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1593007046569" />
-    <state x="958" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1593004687869">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1593008292112" />
+    <state x="958" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1593012674962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593004687869" />
+    <state x="958" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593012674962" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1593002951012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593002951012" />
-    <state width="723" height="210" key="GridCell.Tab.0.bottom" timestamp="1593008013794">
+    <state width="1493" height="290" key="GridCell.Tab.0.bottom" timestamp="1593018754213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593008013794" />
-    <state width="723" height="210" key="GridCell.Tab.0.center" timestamp="1593008013794">
+    <state width="1493" height="290" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593018754213" />
+    <state width="1493" height="290" key="GridCell.Tab.0.center" timestamp="1593018754213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593008013794" />
-    <state width="723" height="210" key="GridCell.Tab.0.left" timestamp="1593008013794">
+    <state width="1493" height="290" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593018754213" />
+    <state width="1493" height="290" key="GridCell.Tab.0.left" timestamp="1593018754212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593008013794" />
-    <state width="723" height="210" key="GridCell.Tab.0.right" timestamp="1593008013794">
+    <state width="1493" height="290" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593018754212" />
+    <state width="1493" height="290" key="GridCell.Tab.0.right" timestamp="1593018754213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593008013794" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/mack/App.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1493" height="290" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593018754213" />
+    <state x="822" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1593015712624">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="822" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1593015712624" />
   </component>
 </project>

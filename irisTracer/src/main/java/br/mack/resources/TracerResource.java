@@ -1,10 +1,12 @@
 package br.mack.resources;
 
-import br.mack.entidade.Tracer;
+import br.mack.api.Tracer;
 import br.mack.persistencia.TracerDAOMySQL;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.util.List;
 
 @Path("Tracer")
 @Produces(MediaType.APPLICATION_JSON)
@@ -16,25 +18,27 @@ public class TracerResource {
     }
 
     @POST
-    public void createTracer(Tracer tracer) {
+    public Tracer createTracer(Tracer tracer) {
         if (tracer == null) {
             throw new BadRequestException("product data missing");
         }
-        dao.create(tracer);
+        this.dao.create(tracer);
+        return tracer;
     }
 
     @GET
-    public void getTracer() {
-        dao.read();
+    public List<Tracer> getTracer() {
+        return this.dao.read();
     }
 
     @DELETE
-    @Path("/{id}")
+    @Path("{id}")
     public void deleteTracer(@PathParam("id") int id){
         dao.delete(id);
     }
 
     @PUT
+    @Path("{id}")
     public void updateTracer(Tracer tracer){
         if (tracer == null) {
             throw new BadRequestException("product data missing");

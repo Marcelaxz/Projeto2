@@ -1,10 +1,14 @@
 package br.mack.persistencia;
-import br.mack.entidade.Tracer;
+import br.mack.api.Tracer;
+
+import java.util.List;
+
 
 public interface TracerDAO {
     boolean create(Tracer tracer);
     boolean delete(int opc);
     boolean update(Tracer tracer);
-    void read();
+    List<Tracer> read ();
+
 }
 

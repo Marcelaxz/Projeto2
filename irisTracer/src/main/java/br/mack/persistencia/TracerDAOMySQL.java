@@ -1,19 +1,17 @@
 package br.mack.persistencia;
 
-import br.mack.entidade.Tracer;
+import br.mack.api.Tracer;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Date;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TracerDAOMySQL implements TracerDAO{
     private final MySQLConnection mysql = new MySQLConnection();
-    String createSQL = "INSERT INTO tracer VALUES (?, ?, ?)";
-    private String updateSQL = "UPDATE tracer SET nome=?, percurso=?, diaCorrido=? WHERE id=?";
-    String deleteSQL = "DELETE FROM tracer WHERE id=?";
-    private String readSQL = "SELECT * FROM tracer";
+    String createSQL = "INSERT INTO Tracer VALUES (?, ?, ?, ?)";
+    private String updateSQL = "UPDATE Tracer SET nome=?, percurso=?, diaCorrido=? WHERE id=?";
+    String deleteSQL = "DELETE FROM Tracer WHERE id=?";
+    private String readSQL = "SELECT * FROM Tracer";
 
     public TracerDAOMySQL(){
 
@@ -30,7 +28,8 @@ public class TracerDAOMySQL implements TracerDAO{
             stm.setLong(1, tracer.getId());
             stm.setString(2, tracer.getNome());
             stm.setDouble(3, tracer.getPercurso());
-            stm.setDate(4, new java.sql.Date(tracer.getDiaCorrido().getTime()));
+            //stm.setDate(4, new java.sql.Date(tracer.getDiaCorrido().getDate()));
+            stm.setDate(4, Date.valueOf(tracer.getDiaCorrido().toString()));
 
 
             int registros = stm.executeUpdate();
@@ -90,7 +89,9 @@ public class TracerDAOMySQL implements TracerDAO{
 
             stm.setString(1, tracer.getNome());
             stm.setDouble(2, tracer.getPercurso());
-            stm.setDate(3, new java.sql.Date(tracer.getDiaCorrido().getTime()));
+            //stm.setDate(3, new java.sql.Date(tracer.getDiaCorrido().getDate()));
+            stm.setDate(3, Date.valueOf(tracer.getDiaCorrido().toString()));
+            stm.setLong(4, tracer.getId());
 
             int registros = stm.executeUpdate();
 
@@ -114,21 +115,24 @@ public class TracerDAOMySQL implements TracerDAO{
 
     // R        E       A       D
     @Override
-    public void read() {
+    public List<Tracer> read(){
         Connection conexao = mysql.getConnection();
+        List<Tracer> tracer = new ArrayList();
+
         try {
             PreparedStatement stm = conexao.prepareStatement(readSQL);
             ResultSet rs = stm.executeQuery();
 
             while (rs.next()) {
-                long id = rs.getLong("id");
-                String nome = rs.getString("nome");
-                Double percurso = rs.getDouble("percurso");
-                Date diaCorrido = rs.getDate("diaCorrido");
-                System.out.println("\nId: " + id + "\nNome: " + nome + "\nPercurso: " + percurso + "\nDiaCorrido: " + diaCorrido);
+                Tracer ttracer = new Tracer();
+                ttracer.setId(rs.getLong("id"));
+                ttracer.setNome(rs.getString("nome"));
+                ttracer.setPercurso(rs.getDouble("percurso"));
+                ttracer.setDiaCorrido(rs.getDate("diaCorrido"));
+                tracer.add(ttracer);
             }
-            rs.close();
-            conexao.close();
+
+            return tracer;
 
         } catch (final SQLException ex) {
             System.out.println("Falha de conexão com a base de dados!");
@@ -142,5 +146,6 @@ public class TracerDAOMySQL implements TracerDAO{
                 ex.printStackTrace();
             }
         }
+        return tracer;
     }
 }

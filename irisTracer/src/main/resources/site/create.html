@@ -8,23 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class = "nuvem">
-    <center><h1 class = "titulo">irisTracer</h1></center>
-
-    <nav>
-        <ul class = "menu">
-
-            <li class = "lista"><a href = "index.html" class = "link1"> HomePage </a></li>
-            <li class = "lista"><a href = "create.html" class = "link1"> Inserir </a></li>
-            <li class = "lista"><a href = "update.html" class = "link1"> Atualizar </a></li>
-            <li class = "lista"><a href = "delete.html" class = "link1"> Deletar </a></li>
-            <li class = "lista"><a href = "read.html" class = "link1"> Ler </a></li>
-        </ul>
-
-    </nav>
-
-    
-
+   <main>
+    <header>
+        <div>
+            <center><h1 class = "titulo">irisTracer</h1></center>
+            <nav>
+                <ul class = "menu">
+                    <li class = "lista"><a href = "index.html" class = "link1"> HomePage </a></li>
+                    <li class = "lista"><a href = "create.html" class = "link1"> Inserir </a></li>
+                    <li class = "lista"><a href = "update.html" class = "link1"> Atualizar </a></li>
+                    <li class = "lista"><a href = "delete.html" class = "link1"> Deletar </a></li>
+                    <li class = "lista"><a href = "read.html" class = "link1"> Ler </a></li>
+                </ul>
+            </nav>
+    </header>
+    <article>
+        <form action="#" class="formulario">
+            <p>Por favor, digite os dados que deseja inserir:</p>
+            <div class="formulario__grupo formulario__grupo--coluna-dir">
+                <label class="formulario__label" for="corrida">Percurso da corrida (informe em KM):</label><br>
+                <input class='formulario__campo' type="text" name="corrida" id="corrida">
+            </div>
+            <div class="formulario__grupo">
+                <label class="formulario__label" for="dia">Dia da corrida (informe no formato DD-MM-AAAA):</label><br>
+                <input class='formulario__campo' type="text" name="dia" id="dia">
+            </div>
+            <input class='formulario__botao' type="submit" value="Enviar">
+        </form>
+    </article>
+   </main>
     <footer>
         <p> Projeto PSII - Turma 3H <br>
             Beatriz Bertan - 31955312

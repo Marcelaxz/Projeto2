@@ -18,7 +18,7 @@ public class MySQLConnection {
         }
     }
 */
-    String url = "jdbc:mysql://192.168.99.100:32777/irisTracer";
+    String url = "jdbc:mysql://192.168.99.100:3306/irisTracer";
     String usuario = "root";
     String senha = "root";
 

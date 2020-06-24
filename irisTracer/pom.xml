@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>br.mack</groupId>
-  <artifactId>irisTracer</artifactId>
+  <artifactId>irisBook</artifactId>
   <version>1.0</version>
 
-  <name>irisTracer</name>
+  <name>irisBook</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 

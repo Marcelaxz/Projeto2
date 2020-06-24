@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="293ffa37-bd99-4260-88a5-be229c1d4e2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/mack/persistencia/TracerDAOMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/mack/persistencia/TracerDAOMySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/mack/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/mack/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +20,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1dlarNYp1eyZ6R6h6MrOAhTylVC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

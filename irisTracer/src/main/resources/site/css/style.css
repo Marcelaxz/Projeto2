@@ -96,18 +96,18 @@ a.link1:hover{
 .formulario__grupo{
     margin-bottom: 15px;
 }
-
+    
 .formulario__campo{
     width: 100%;
     border: 1px solid #c4c4c4;
     border-radius: 5px;
     padding: 10px 5px; /*1º parâmetro: verticais; 2º: horizontais*/
 }
-
+    
 .formulario__label{
     color: #343434;
 }
-
+    
 .formulario__botao{
     border: 3px solid #fff;
     border-radius: 350px;

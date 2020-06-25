@@ -67,7 +67,7 @@ d3.json("http://localhost:8080/api/Tracer",
           .enter()
           .append("circle")
           .attr("cx", function(d) { return x(d.diaCorrido) } )
-          .attr("cy", function(d) { return y(d.Percurso) } )
+          .attr("cy", function(d) { return y(d.percurso) } )
           .attr("r", 2.5)
           .attr("fill", "#FC3D21")
     })

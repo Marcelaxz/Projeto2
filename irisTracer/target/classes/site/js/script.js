@@ -2,8 +2,6 @@ let BASE_URL = "http://localhost:8080/api/Tracer";
 
 class Data {
     constructor() {
-        this.percurso = document.getElementById("percurso").value;
-        this.diaCorrido = document.getElementById("diaCorrido").value;
     }
 }
 
@@ -13,15 +11,20 @@ function alerta() {
 
 function onSubmitCreate() {
     let dat = new Data();
+    dat.percurso = document.getElementById("percurso").value;
+    dat.diaCorrido = document.getElementById("diaCorrido").value;
         createTracer(dat, alerta);
 }
 
 function onSubmitUpdate(){
     let dat = new Data();
+    //colocar o dat.id =
+    dat.percurso = document.getElementById("percurso").value;
+    dat.diaCorrido = document.getElementById("diaCorrido").value;
         updateTracer(dat, alerta);
 }
 
-function onSubmitDelete(){
+function onSubmitDelete() {
     let dat = new Data();
         deleteTracer(document.getElementById("id").value, alerta)
 }
@@ -44,8 +47,9 @@ function getJSON(url, callback) {
 }
 
 function deleteTracer(id, callback) {
-    let deleteURL = BASE_URL;
+    let deleteURL = BASE_URL + "/" + id;
     var dat = new Data();
+    dat.id = id;
     var xhr = new XMLHttpRequest();
     xhr.open('DELETE', deleteURL, true);
     xhr.responseType = 'json';
@@ -63,7 +67,7 @@ function deleteTracer(id, callback) {
 }
 
 function updateTracer(tracer, callback) {
-    let deleteURL = BASE_URL;
+    let deleteURL = BASE_URL + "/" + id;
 
     var xhr = new XMLHttpRequest();
     xhr.open('PUT', deleteURL, true);

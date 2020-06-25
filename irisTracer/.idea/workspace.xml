@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b70007f5-780e-4e8a-91a6-ab534ee165f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/site/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/site/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/site/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/site/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,18 +12,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1dlUQF0jpy493EOUevFJ7OR3kbK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">

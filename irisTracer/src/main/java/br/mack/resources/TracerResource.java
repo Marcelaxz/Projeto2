@@ -1,12 +1,10 @@
 package br.mack.resources;
 
-import br.mack.api.Result;
 import br.mack.api.Tracer;
 import br.mack.persistencia.TracerDAOMySQL;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Path("Tracer")
@@ -30,11 +28,6 @@ public class TracerResource {
     @GET
     public List<Tracer> getTracer() {
         return this.dao.read();
-    }
-
-    @GET
-    @Path("/datas")
-    public  List<Result> getDados(){ return  this.dao.result();
     }
 
     @DELETE

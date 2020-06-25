@@ -1,6 +1,5 @@
 package br.mack.persistencia;
 
-import br.mack.api.Result;
 import br.mack.api.Tracer;
 
 
@@ -14,14 +13,13 @@ public class TracerDAOMySQL implements TracerDAO{
     private String updateSQL = "UPDATE Tracer SET percurso=?, diaCorrido=? WHERE id=?";
     String deleteSQL = "DELETE FROM Tracer WHERE id=?";
     private String readSQL = "SELECT * FROM Tracer";
-    private String rsSQL = "SELECT  COUNT(id), diaCorrido \"YYYY-MM-dd\" GROUP BY diaCorrido";
 
 
     public TracerDAOMySQL(){
 
     }
 
-    // C       R       E       A       T
+    // C       R       E       A       T       E
     @Override
     public boolean create(Tracer tracer) {
         Connection conexao = mysql.getConnection();
@@ -148,35 +146,4 @@ public class TracerDAOMySQL implements TracerDAO{
         return tracer;
     }
 
-    public List<Result> result() {
-        Connection conexao = mysql.getConnection();
-        List<Result> results = new ArrayList();
-
-        try {
-            PreparedStatement stm = conexao.prepareStatement(rsSQL);
-            ResultSet rs = stm.executeQuery();
-
-            while (rs.next()) {
-                Result result = new Result();
-                result.setDate(rs.getString("DATA"));
-                result.setValue(rs.getLong("COUNT(id)"));
-                results.add(result);
-            }
-
-            return results;
-
-        } catch (final SQLException ex) {
-            System.out.println("Falha de conexão com a base de dados!");
-            ex.printStackTrace();
-        } catch (final Exception ex) {
-            ex.printStackTrace();
-        } finally {
-            try {
-                conexao.close();
-            } catch (final Exception ex) {
-                ex.printStackTrace();
-            }
-        }
-        return results;
-    }
 }

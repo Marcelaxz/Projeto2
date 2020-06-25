@@ -8,8 +8,6 @@ import java.io.Serializable;
 public class Tracer implements Serializable {
     private long id;
     private double percurso;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "YYYY-MM-dd")
-
     private String diaCorrido;
 
     public Tracer(){}

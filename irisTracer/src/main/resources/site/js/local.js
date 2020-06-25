@@ -1,4 +1,3 @@
-//LET BASE_URL =
 var margin = {top: 10, right: 30, bottom: 30, left: 60},
     width = 1060 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
@@ -16,17 +15,15 @@ d3.json("http://localhost:8080/api/Tracer",
 
     function(data){
 
-        //document.getElementById("term").innerHTML = data.term;
-
         var parseDate = d3.timeParse("%Y-%m-%d");
 
         data = data.map(function (d) {
             d.diaCorrido = parseDate(d.diaCorrido);
-      let newData = {
-          diaCorrido: d.diaCorrido,
-          percurso: d.percurso // Mude aqui o campo do json
-      }
-      return newData;
+        let newData = {
+            diaCorrido: d.diaCorrido,
+            percurso: d.percurso // Mude aqui o campo do json
+        }
+            return newData;
         });
 
 

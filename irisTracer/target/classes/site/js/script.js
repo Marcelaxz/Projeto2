@@ -18,7 +18,7 @@ function onSubmitCreate() {
 
 function onSubmitUpdate(){
     let dat = new Data();
-    //colocar o dat.id =
+    dat.id = document.getElementById("id").value;
     dat.percurso = document.getElementById("percurso").value;
     dat.diaCorrido = document.getElementById("diaCorrido").value;
         updateTracer(dat, alerta);
@@ -67,10 +67,9 @@ function deleteTracer(id, callback) {
 }
 
 function updateTracer(tracer, callback) {
-    let deleteURL = BASE_URL + "/" + id;
-
+    let updateURL = BASE_URL + "/" + id;
     var xhr = new XMLHttpRequest();
-    xhr.open('PUT', deleteURL, true);
+    xhr.open('PUT', updateURL, true);
     xhr.responseType = 'json';
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onload = function () {

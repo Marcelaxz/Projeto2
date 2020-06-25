@@ -4,10 +4,12 @@
     <title>irisTracer</title>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3.v4.js"> </script>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+<script src="js/script.js"></script>
+<script src="js/local.js"></script>
 <header>
     <div class = "nuvem">
         <center><h1 class = "titulo">irisTracer</h1></center>
@@ -19,15 +21,16 @@
                 <li class = "lista"><a href = "delete.html" class = "link1"> Deletar </a></li>
             </ul>
         </nav>
+    </div>
 </header>
 <article>
-    <form action="#" class="formulario">
+    <form action="#" class="formulario" onsubmit = "event.preventDefault();onSubmitDelete();">
         <p>Por favor, digite os dados que deseja deletar:</p>
-        <div class="formulario__grupo formulario__grupo--coluna-esq">
-            <label class="formulario__label" for="dia">Dia da corrida (informe no formato DD-MM-AAAA):</label><br>
-            <input class='formulario__campo' type="text" name="dia" id="dia">
+        <div class="formulariogrupo formulariogrupo--coluna-esq">
+            <label class="formulariolabel" for="id">Id do corredor:</label><br>
+            <input class='formulariocampo' type="text" name="id" id="id">
         </div>
-        <input class='formulario__botao' type="submit" value="Enviar">
+        <input class='formulario__botao'   type="submit" value="Enviar">
     </form>
 </article>
 <footer>
@@ -39,6 +42,5 @@
         Marcela Sousa - 31958443
     </p>
 </footer>
-</div>
 </body>
 </html>

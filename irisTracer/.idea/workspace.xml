@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="293ffa37-bd99-4260-88a5-be229c1d4e2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/site/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b70007f5-780e-4e8a-91a6-ab534ee165f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/resources/site/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/site/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/site/read.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/site/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/site/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/site/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/read.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
